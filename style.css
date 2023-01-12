@@ -171,11 +171,11 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-/*.row img{
+.row img{
    width: 100%;
    margin-top: 1em;
    border-radius: 2%;
-}*/
+}
 .bio{
     flex-basis: 50%;
     margin-bottom: 5%;
@@ -202,116 +202,6 @@ nav{
     text-align: center;
     padding-top: 50px;
 }
-.container_progress{
-    width: 80%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-}
-.progress_bar{
-    background: gainsboro;
-    width: 42.857em;
-    height: 0.714em;
-    border-radius: 0.357em;
-}
-.progress_bar div{
-    height: 0.714em;
-    border-radius: 0.357em;
-    width: 0%;
-}
-.progress_bar div span{
-    height: 2.857em;
-    width: 2.857em;
-    background: gray;
-    border-radius: 50%;
-    float: right;
-    margin-top: -1.071em;
-    margin-right: -1.428em;
-    color: white;
-    display: grid;
-    place-items: center;
-}
-.progress h2{
-    color: grey;
-    letter-spacing: 0.07em;
-    font-weight: 600;
-    margin-top: 2.5em;
-    margin-bottom: 0.357em;
-    font-size: 1.142em;
-}
-.html{
-    background: rgb(10, 255, 255);
-    animation: html 2s linear forwards
-}
-.css{
-    background: rgb(10, 255, 255);
-    animation: css 2s linear forwards
-}
-.javascript{
-    background: rgb(10, 255, 255);
-    animation: javascript 2s linear forwards
-}
-.python{
-    background: rgb(10, 255, 255);
-    animation: python 2s linear forwards
-}
-.jquery{
-    background: rgb(10, 255, 255);
-    animation: jquery 2s linear forwards
-}
-.mysql{
-    background: rgb(10, 255, 255);
-    animation: mysql 2s linear forwards
-}
-.html span{
-    border: 0.071em solid rgb(10, 255, 255);
-}
-.css span{
-    border: 0.071em solid rgb(10, 255, 255);
-}
-.javascript span{
-    border: 0.071em solid rgb(10, 255, 255);
-}
-.jquery span{
-    border: 0.071em solid rgb(10, 255, 255);
-}
-.python span{
-    border: 0.071em solid rgb(10, 255, 255);
-}
-.mysql span{
-    border: 0.071em solid rgb(10, 255, 255);
-}
-@keyframes html{
-    100%{
-        width: 90%;
-    }
-}
-@keyframes css{
-    100%{
-        width: 85%;
-    }
-}
-@keyframes javascript{
-    100%{
-        width: 50%;
-    }
-}
-@keyframes python{
-    100%{
-        width: 60%;
-    }
-}
-@keyframes jquery{
-    100%{
-        width: 45%;
-    }
-}
-@keyframes mysql{
-    100%{
-        width: 60%;
-    }
-}
-
 .skill-col{
     flex-basis: 30%;
     border-radius: 0.714em;

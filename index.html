@@ -13,7 +13,8 @@
     <section class="header" id="header">
         <nav>
             <a href="index.html" class="name">ARNOLD <span>MDLULI</span></a>
-            <div id="nav-link">
+            <div class="nav-link" id="navlink">
+                <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu"></i>
                 <ul>
                     <!--<i class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-angles-right"></i>-->
@@ -23,7 +24,7 @@
                     <li><a href="#projects">PROJECTS</a></li>
                 </ul>
             </div>
-
+            <i class="fa-solid fa-bars" onclick="showMenu"></i>
         </nav>
         <div class="text_header">
             <h1>Welcome to my <span>Portfolio</span></h1>
@@ -126,5 +127,16 @@
         </div>
         <p>Made by Arnold Siyabonga Mdluli <i class="fa fa-heart-o"></i> </p>
     </section>
+
+    <!-- The JS Script of the site Down here! -->
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showMenu() {
+            navlink.style.right = "0";
+        }
+        function hideMenu() {
+            navlink.style.right = "-14.286em"
+        }
+    </script>
 </body>
 </html>

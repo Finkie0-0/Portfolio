@@ -26,7 +26,7 @@ body{
 .header{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(6, 27, 2, 0.4),rgba(16, 78, 4, 0.61)),url("Image/bg.jpg");
+    background-image: linear-gradient(rgba(6, 27, 2, 0.4),rgba(16, 78, 4, 0.61)),url(Image/bg.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -48,26 +48,26 @@ nav{
 .name span{
     color: rgb(10, 255, 255);
 }
-.name:hover{
+/*.name:hover{
     transform: translateY(-0.2em);
-}
-#nav-link{
+}*/
+.nav-link{
     flex: 1;
     text-align: right;
 }
-#nav-link ul li{
+.nav-link ul li{
     list-style: none;
     display: inline-block;
     padding: 0.57em 0.85em;
     position: relative;
 }
-#nav-link ul li a{
+.nav-link ul li a{
     color: whitesmoke;
     text-decoration:none;
     font-size: 1.07em;
     font-weight: 700;
 }
-#nav-link ul li::after{
+.nav-link ul li::after{
     content: "";
     width: 0%;
     height: 0.13em;
@@ -77,7 +77,7 @@ nav{
     
     transition: 0.75s;
 }
-#nav-link ul li:hover::after{
+.nav-link ul li:hover::after{
     width: 100%;
 }
 .text_header{
@@ -105,12 +105,11 @@ nav{
     color: white;
     text-shadow: 0 0 0.5em black;
     border: 0.07em solid black;
-    padding: 0.86em 2.43em;
+    padding: 0.86em 1.215em;
     font-size: 1.3em;
     background: transparent;
     position: relative;
     cursor: pointer;
-    margin: 1em 0;
     border-radius: 0.71em;
 
     transition: 0.75s;
@@ -122,14 +121,17 @@ nav{
     text-shadow: 0 0 0.7em white;
     
 }
-@media (max-width: 50em){
+nav .fa-solid{
+    display: none;
+}
+@media (max-width: 57.142em){
     .text_header h1{
-        font-size: 2.215em;
+        font-size: 1.2em;
     }
-    #nav-links ul li{
+    .nav-links ul li{
         display: block;
     }
-    #nav-links {
+    .nav-links {
         position: absolute;
         height: 100vh;
         width: 14.29em;
@@ -139,7 +141,14 @@ nav{
         z-index: 2;
         transition: 2s;
     }
-    #nav-links ul{
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 0.714em;
+        font-size: 1.571em;
+        cursor: pointer;
+    }
+    .nav-links ul{
         padding: 2.143em;
     }
 }

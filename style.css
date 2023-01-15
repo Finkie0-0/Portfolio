@@ -76,7 +76,7 @@ nav .mainMenu li a:hover:after{
 }
 nav .openMenu{
     font-size: 1.8em;
-    margin: 1em;
+    margin: 0.3em;
     display: none;
     cursor: pointer;
 }
@@ -128,9 +128,12 @@ nav .mainMenu .closeMenu{
 }
 @media (max-width: 57.142em){
     .text_header h1{
-        font-size: 3em;
+        font-size: 2em;
 
         transition: 1s;
+    }
+    .name {
+        font-size: 1.5em;
     }
     nav .mainMenu{
         height: 100vh;

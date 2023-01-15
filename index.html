@@ -14,17 +14,19 @@
         <nav>
             <a href="index.html" class="name">ARNOLD <span>MDLULI</span></a>
             <div class="nav-link" id="navlink">
-                <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu"></i>
-                <ul>
+                <div class="openMenu"><i class="fa-solid fa-bars" onclick="showMenu"></i></div>
+                
+                <ul class="mainMenu">
                     <!--<i class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-angles-right"></i>-->
                     <li><a href="#header">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
+                    <div class="closeMenu"><i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu"></i></div>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu"></i>
+            
         </nav>
         <div class="text_header">
             <h1>Welcome to my <span>Portfolio</span></h1>
@@ -129,14 +131,7 @@
     </section>
 
     <!-- The JS Script of the site Down here! -->
-    <script>
-        var navlink = document.getElementById("navlink");
-        function showMenu() {
-            navlink.style.right = "0";
-        }
-        function hideMenu() {
-            navlink.style.right = "-14.286em"
-        }
+    <script src="script.js">
     </script>
 </body>
 </html>

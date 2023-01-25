@@ -112,6 +112,7 @@ nav .mainMenu .closeMenu{
     text-shadow: 0 0 0.5em black;
     border: 0.07em solid black;
     padding: 0.86em 1.215em;
+    margin-top: 3.125em;
     font-size: 1.3em;
     background: transparent;
     position: relative;
@@ -197,7 +198,7 @@ nav .mainMenu .closeMenu{
 }
 .row img{
    width: 100%;
-   margin-top: 1em;
+   /*margin-top: 1em;*/
    border-radius: 2%;
 }
 .bio{
@@ -235,7 +236,7 @@ nav .mainMenu .closeMenu{
 }
 .skill-col img{
     width: 100%;
-    height: 20em;
+    height: 100%;
     display: block;
 }
 .layer{

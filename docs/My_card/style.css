@@ -10,6 +10,7 @@ body{
     place-items:center;
     font-family: 'Poppins',sans-serif;
     background: linear-gradient(37.5deg, #ea4b33, rgb(255, 231, 13));
+    background-size: 200%;
 }
 .content{
     text-align: center;
@@ -74,4 +75,12 @@ body{
 }
 .content:hover{
     transform: rotateY(30deg) rotateX(30deg);
+}
+@media (max-width:43.75em) {
+    body{
+        height: 180vh;
+        margin: 2em 1em;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
 }

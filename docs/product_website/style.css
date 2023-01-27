@@ -158,3 +158,8 @@ form button{
 .btn.active:hover{
     background: #553ff0;
 }
+@media (max-width: 700px) {
+    .product{
+        flex-direction: column;
+    }
+}
